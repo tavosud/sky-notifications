@@ -174,6 +174,10 @@ type NotificationType = 'success' | 'error' | 'info' | 'warning';
 | `< 480px` | Bottom, full width | 100% (with `0.75rem` side margin) | Slides up |
 | `≥ 480px` | Top-right corner | 360px fixed | Slides in from right |
 
+## Live Demo
+
+[Open in CodeSandbox](https://codesandbox.io/p/sandbox/sky-notifications-48kk5j)
+
 ## License
 
 MIT
