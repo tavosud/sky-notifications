@@ -2,6 +2,8 @@
 
 Lightweight, zero-dependency toast notification library for React. No CSS frameworks required — styles are injected automatically.
 
+![preview](https://raw.githubusercontent.com/tavosud/sky-notifications/master/assets/preview.jpg)
+
 ## Technologies
 
 | | |
