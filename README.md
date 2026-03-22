@@ -35,7 +35,7 @@ npm install @tavosud/sky-notifications
 
 ## Setup
 
-### JavaScript (JSX)
+### Vite / CRA — JavaScript (JSX)
 
 ```jsx
 // main.jsx
@@ -48,7 +48,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
 );
 ```
 
-### TypeScript (TSX)
+### Vite / CRA — TypeScript (TSX)
 
 ```tsx
 // main.tsx
@@ -58,6 +58,49 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
   <NotificationProvider>
     <App />
   </NotificationProvider>
+);
+```
+
+### Next.js App Router
+
+`NotificationProvider` requiere ser Client Component. En Next.js App Router, `metadata` y `'use client'` **no pueden coexistir en el mismo archivo**, por lo que hay que crear un componente wrapper separado.
+
+**1. Crear `app/providers.tsx`:**
+
+```tsx
+// app/providers.tsx
+'use client';
+
+import { NotificationProvider } from '@tavosud/sky-notifications';
+
+export function Providers({ children }: { children: React.ReactNode }) {
+  return <NotificationProvider>{children}</NotificationProvider>;
+}
+```
+
+**2. Usar `<Providers>` en `app/layout.tsx`** (sin `'use client'`):
+
+```tsx
+// app/layout.tsx
+import type { Metadata } from 'next';
+import { Providers } from './providers';
+
+export const metadata: Metadata = {
+  title: 'Mi App',
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body>
+        <Providers>{children}</Providers>
+      </body>
+    </html>
+  );
+}
+```
+
+> **¿Por qué?** `export const metadata` solo funciona en Server Components. `'use client'` y `metadata` no pueden estar en el mismo archivo en Next.js App Router.
 );
 ```
 
