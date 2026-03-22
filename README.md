@@ -100,9 +100,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 }
 ```
 
-> **¿Por qué?** `export const metadata` solo funciona en Server Components. `'use client'` y `metadata` no pueden estar en el mismo archivo en Next.js App Router.
-);
-```
+**¿Por qué?** `export const metadata` solo funciona en Server Components. `'use client'` y `metadata` no pueden estar en el mismo archivo en Next.js App Router.
 
 ## Usage
 
