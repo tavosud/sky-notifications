@@ -1,5 +1,14 @@
 # sky-notifications
 
+[![npm version](https://img.shields.io/npm/v/@tavosud/sky-notifications?style=flat-square&color=0ea5e9&logo=npm)](https://www.npmjs.com/package/@tavosud/sky-notifications)
+[![npm downloads](https://img.shields.io/npm/dm/@tavosud/sky-notifications?style=flat-square&color=38bdf8&logo=npm)](https://www.npmjs.com/package/@tavosud/sky-notifications)
+[![license](https://img.shields.io/npm/l/@tavosud/sky-notifications?style=flat-square&color=22d3ee)](https://github.com/tavosud/sky-notifications/blob/master/LICENSE)
+[![react peer](https://img.shields.io/npm/dependency-version/@tavosud/sky-notifications/peer/react?style=flat-square&color=61dafb&logo=react)](https://reactjs.org)
+[![TypeScript](https://img.shields.io/badge/TypeScript-ready-3178c6?style=flat-square&logo=typescript)](https://www.typescriptlang.org)
+[![bundle size](https://img.shields.io/bundlephobia/minzip/@tavosud/sky-notifications?style=flat-square&color=a78bfa&label=minzipped)](https://bundlephobia.com/package/@tavosud/sky-notifications)
+[![Open in CodeSandbox](https://img.shields.io/badge/Open%20in-CodeSandbox-151515?style=flat-square&logo=codesandbox)](https://codesandbox.io/p/sandbox/sky-notifications-48kk5j)
+[![Ko-fi](https://img.shields.io/badge/Support%20me-Ko--fi-ff5e5b?style=flat-square&logo=ko-fi)](https://ko-fi.com/tavosud)
+
 Lightweight, zero-dependency toast notification library for React. No CSS frameworks required — styles are injected automatically.
 
 ![preview](https://raw.githubusercontent.com/tavosud/sky-notifications/master/assets/preview.jpg)
@@ -174,10 +183,15 @@ type NotificationType = 'success' | 'error' | 'info' | 'warning';
 | `< 480px` | Bottom, full width | 100% (with `0.75rem` side margin) | Slides up |
 | `≥ 480px` | Top-right corner | 360px fixed | Slides in from right |
 
-## Live Demo
-
-[Open in CodeSandbox](https://codesandbox.io/p/sandbox/sky-notifications-48kk5j)
-
 ## License
 
 MIT
+
+---
+
+<p align="center">
+  If this library saved you time, consider buying me a coffee ☕<br/>
+  <a href="https://ko-fi.com/tavosud">
+    <img src="https://ko-fi.com/img/githubbutton_sm.svg" alt="Support me on Ko-fi" />
+  </a>
+</p>
