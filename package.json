@@ -2,6 +2,14 @@
   "name": "@tavosud/sky-notifications",
   "version": "1.0.0",
   "description": "Lightweight zero-dependency toast notification library for React",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tavosud/sky-notifications.git"
+  },
+  "homepage": "https://github.com/tavosud/sky-notifications#readme",
+  "bugs": {
+    "url": "https://github.com/tavosud/sky-notifications/issues"
+  },
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
   "types": "./dist/index.d.ts",
